@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Create your tinder page
+    </h1>
+    <form method="GET" action="success.html">
+        <!--ÂLL THE INPUTS NEED TO BE HERE-->
+        <!--Name-->
+        <div>
+            <label for="form-firstname">
+                Firstname
+            </label>
+            <br/>
+            <input type="text" name="firstname" id="form-firstname" placeholder="Give me your firstname(FE: brad)" required="true">
+        </div>
+
+        <!--Family name-->
+        <div>
+            <label for="form-familyname">
+                Familyname
+            </label>
+            <br/>
+            <input type="text" name="lastname" id="form-familyname" value="Gyanmote">
+        </div>
+
+        <!--Age-->
+        <div>
+            <label for="form-age">
+                Age
+            </label>
+            <br/>
+            <input type="number" name="age" id="form-age" min="18">
+        </div>
+        <!--Date of birth-->
+        <div>
+            <lable for="form-dob">
+                Date of birth
+            </lable>
+            <br/>
+            <input type="date" id="form-dob">
+        </div>    
+        
+        <!--Email-->
+        <div>
+            <label for="form-mail">
+                email
+            </label>
+            <br/>
+            <input type="email" name="mail" id="form-mail"> 
+        </div>
+
+        <!--Profile picture-->
+        <div>
+            <label for="form-img">
+                Profile Picture
+            </label>
+            <br/>
+            <input type="file" name="profile-picture" id="form-img">
+        </div>
+
+        <!--Favorite color-->
+        <div>
+            <label for="form-favcolor">
+                Favorite color
+            </label>
+            <br/>
+            <input type="color" name="favcolor" id="form-favcolor">
+        </div>
+
+        <!--Gender-->
+        <div>
+            <input type="radio" name="gender" value="male" id="for-male" checked>
+            <label for="for-male">
+                  Male
+            </label>
+            <input type="radio" name="gender" value="female" id="for-female">
+            <label for="for-female">
+                Female
+          </label>
+            <input type="radio" name="gender" value="other" id="for-other">
+            <label for="for-other">
+                Others
+          </label>
+        </div>
+        <!--Preferred Gender-->
+        <div>
+            <label for="for-pref-gender">
+                Prefered gender
+            </label>
+
+            <select name="pref-gender" id="for-pref-gender">
+                <option>
+                    male
+                </option>
+                <option>
+                    female
+                </option>
+                <option>
+                    others
+                </option>
+            </select>
+        </div>
+
+        <!--Hobbies-->
+        <div>
+            <label>
+                Hobbies
+            </label>
+
+            <!--fishing-->
+            <input type="checkbox" name="hobbies-fishing" value="fishing" id="for-fishing">
+            <label for="for-fishing">
+                Fishing
+            </label>
+
+            <!--formula1 driving-->
+            <input type="checkbox" name="hobbies-formula1 driving" value="formula1 driving" id="for-formula1-driving">
+            <label for="for-formula1-driving">
+                formula1 driving
+            </label>
+        </div>
+
+        <!--Password-->
+        <div>
+            <label id="for-password">
+                Password
+            </label>
+            <input type="password" name="password" id="for-password">
+        </div>
+
+        <!--Text area-->
+        <div>
+            <label for="for-description">
+                Description
+            </label>
+            <textarea name="description" id="for-description" rows="10" cols="100">
+                I am so alone
+            </textarea>
+        </div>
+
+        <!-- Submit button-->
+        <input type="submit" value="Create profile">
+    </form>
+</body>
+</html>
